@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setPage } from "../../store/slices/pageSlice";
 import { useNavigate } from 'react-router-dom';
@@ -13,12 +13,18 @@ function LoginPage() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    dispatch(setPage({
-        user: false,
-        service: false,
-        main: false,
-        login: true
-    }));
+
+    useEffect(() => {
+        const fetchdata = async() => {
+            dispatch(setPage({
+                user: false,
+                service: false,
+                main: false,
+                login: true
+            }));
+        }
+        fetchdata();
+    }, [dispatch]);
 
     const handleLogin = async() => {
         const expiresInMins = 4000;
