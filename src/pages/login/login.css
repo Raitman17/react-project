@@ -1,0 +1,40 @@
+.formContainer {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-Color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-Color: #007bff;
+    color: white;
+    border: none;
+    border-Radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loginButtonHover {
+    background-Color: #0056b3;
+}
+
+.error-message {
+    color: #dc3545;
+    font-Size: 14px;
+}
